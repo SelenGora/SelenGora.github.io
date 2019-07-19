@@ -61,23 +61,13 @@ h1,h2 {
 
 #welcome-section {
     align-items: center;
-    
+    display: flex;
     height: 100vh;
     width: 100%;
 }
 
 .welcome-message {
-    text-align: center;
-    margin-top: calc(var(--nav-gutter)*3);
-}
-
-@media (min-width: 768px) {
-    .welcome-message {
-        left: 35%;
-        position: absolute;
-        text-align: left;
-        top: 25%;
-    }
+    width: 100%;
 }
 
 
@@ -204,3 +194,5 @@ footer {
         max-width: var(--media-large);
     }
 }
+
+
