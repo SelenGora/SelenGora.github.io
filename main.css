@@ -1,8 +1,8 @@
 :root {
     --teal: #39CCCC;
     --navy: #001F3F;
-    --blue: #0074D9;
-    --silver: #ddd;
+    --blue: #5fb0e5;
+    --silver: #f2f2f2;
 
     --nav-gutter: 48px;
 
@@ -58,6 +58,10 @@ h1,h2 {
     margin-left: 16px;
 }
 
+.unicat {
+    border-radius: 50%;
+    height: 150px;
+}
 
 #welcome-section {
     align-items: center;
@@ -72,12 +76,14 @@ h1,h2 {
 
 
 #welcome-section h1 {
-    font-size: 72px;
+    font-size: 48px;
+    margin: 20px 0;
 }
 
 #welcome-section p {
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 100;
+    margin: 14px 0;
 }
 
 #welcome-section a {
@@ -174,6 +180,14 @@ footer {
 @media (min-width: 768px) {
     .container {
         max-width: var(--media-medium);
+    }
+
+    #welcome-section h1 {
+        font-size: 72px;
+    }
+
+    #welcome-section p {
+        font-size: 36px;
     }
 }
 

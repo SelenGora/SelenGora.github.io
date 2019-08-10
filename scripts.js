@@ -11,10 +11,10 @@ function getRandomColor() {
   new TypeIt(element, {
     speed: 100,
     waitUntilVisible: true,
-    loop: true
-    // afterStep: function (step, queue, instance) {
-    //     element.style.color = getRandomColor();
-    // }
+    loop: true,
+    afterStep: function (step, queue, instance) {
+        element.style.color = getRandomColor();
+    }
   })
     .type("javascript")
     .pause(2000)
